@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <com.w4pity.lightpaintingstudio2.CameraPreview
+        android:id="@+id/cameraPreview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <!--<com.w4pity.lightpaintingstudio2.CustomView
+        android:id="@+id/cv"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        />
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Go!" />
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Stop!" />
+        <Button
+            android:id="@+id/buttonOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Options!" />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Save!" />
+
+    </LinearLayout>
+
+    <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/iv"
+       android:layout_weight="1"
+       android:src="@drawable/logo"/>
+
+
+    <ProgressBar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+
+
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal" />
+
+</LinearLayout>
